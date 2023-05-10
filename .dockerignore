@@ -1,0 +1,14 @@
+# Git
+.git
+.gitignore
+
+# Docker
+.docker
+
+# Python
+*.pyc
+
+.env
+.venv
+env/
+venv/
