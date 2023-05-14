@@ -1,8 +1,8 @@
-version: '3.9'
+version: "3.9"
 
 services:
   app:
-    build: 
+    build:
       context: .
       args:
         - DEV=true
@@ -12,10 +12,3 @@ services:
       - ./app:/app
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
-  flake8:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - ./app:/app
-    command: flake8
